@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<readers>
+  <reader_emulated name="ClearStream Device 1" enabled="True" host="PTS_EMULATED-64-DE-02" port="5084" comment="" lastloginmessage="Started." readerid="1" uuid="8e46a118-8dc3-4ef1-bb82-3dc27cc8d85a">
+    <options readtype="0" interval="60" duration="15" port="1" gpitimeout="0" gpidebouncetime="0" addtogpitimeout="True" timedtype="Interval" minpower="14" maxpower="30" maxprefilters="4" starttime="9/02/2024 8:30:23 a. m." stoptime="9/02/2024 8:30:23 a. m." scanday_sun="False" scanday_mon="False" scanday_tue="False" scanday_wed="False" scanday_thu="False" scanday_fri="False" scanday_sat="False" sendwhenread="False" datetimeformat="">
+      <antennas>
+        <antenna id="1" name="S1" power="30" tagsession="S0" dwelltime="-1" />
+        <antenna id="2" name="E1" power="30" tagsession="S0" dwelltime="-1" />
+      </antennas>
+      <customfields>
+        <field>
+          <name>Pedido</name>
+          <values>
+            <value name="Pedido">
+              <staticvalue>[*CUSTOMPROP*]</staticvalue>
+              <function type="0" start="0" length="0" />
+              <condition type="None">
+                <sourcefield>EPC</sourcefield>
+                <value />
+              </condition>
+            </value>
+          </values>
+        </field>
+        <field>
+          <name>Movimiento</name>
+          <values>
+            <value name="Check out">
+              <staticvalue>Saliendo</staticvalue>
+              <function type="0" start="0" length="0" />
+              <condition type="Contains">
+                <sourcefield>Antenna</sourcefield>
+                <value>S1</value>
+              </condition>
+            </value>
+            <value name="Check in">
+              <staticvalue>Entrando</staticvalue>
+              <function type="0" start="0" length="0" />
+              <condition type="Contains">
+                <sourcefield>Antenna</sourcefield>
+                <value>E1</value>
+              </condition>
+            </value>
+          </values>
+        </field>
+      </customfields>
+      <readermgmt epctaglength="12" userbanklength="64" tidbanklength="16" maxtagcount="4096" reportallmembanksduringscan="False" convertusermembanktoascii="False" convertepcmembanktoascii="True" decode_sgtin="False" include_checkdigit="True" />
+      <tagreporting moderated_buffer_scan_interval_milliseconds="1000" sw_moderatedtagreads="True" sw_moderatedtimeout_milliseconds="10000" sw_moderatelevel="Antenna" keycolumn="EPC">
+        <tagevent_visible sw_moderated_reporttagvisible="True" sw_rereporttagsonlyafternotvisible="True">New tag visible</tagevent_visible>
+        <tagevent_notvisible sw_moderated_reporttagnotvisible="False">Tag no longer visible</tagevent_notvisible>
+        <event_datachanged sw_moderated_reportondatachanged="True" reportondatachanged_column="EPC" />
+        <tagevent_notagread reportnotagread="False">No tag read</tagevent_notagread>
+        <sendeventdelay enabled="False" interval="500" maxrecords="1" />
+      </tagreporting>
+    </options>
+  </reader_emulated>
+</readers>

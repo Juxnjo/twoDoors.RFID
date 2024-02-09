@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<profile name="Profile 1" defaultsyncprofile="False" realtimeprofile="False" livemode_v9x1="True" profile_id="1">
+  <processes>
+    <process name="Process 1" enabled="True" lastsyncstatus="9/02/2024 10:42:43 a. m.:  Sync completed.">
+      <comment />
+      <options updatetype="UpdateExistingAppendIfNotFound" overwritewithzerorecords="False" deleteaftertransfer="False" />
+      <datasets>
+        <dataset_source table="RFID" deviceguid="8e46a118-8dc3-4ef1-bb82-3dc27cc8d85a">
+          <datasource type="RFID" devicetype="LLRP" name="" ip="" port="5084">
+            <options />
+          </datasource>
+          <options readtype="0" interval="60" duration="15" port="1" gpitimeout="0" timedtype="Interval" starttime="9/02/2024 11:00:20 a. m." stoptime="9/02/2024 11:00:20 a. m." scanday_sun="False" scanday_mon="False" scanday_tue="False" scanday_wed="False" scanday_thu="False" scanday_fri="False" scanday_sat="False">
+            <readermgmt epctaglength="12" userbanklength="64" maxtagcount="4096" />
+            <tagreporting />
+          </options>
+        </dataset_source>
+        <dataset_dest table="Stock">
+          <datasource type="ODBC" schema="" name="ClearStream RFID Sample 64-Bit" user="" password="" usesingleconnection="True">
+            <options />
+          </datasource>
+          <options dbformat_date="" dbformat_time="" dbformat_treat_dates_as_string="0" dbformat_treat_num_as_string="0" savesigsasjpegs="False">
+            <binfolderpath>C:\Program Files\PTS\ClearStream RFID 7\Bin\</binfolderpath>
+          </options>
+        </dataset_dest>
+      </datasets>
+      <fieldmappings>
+        <mapping index="0">
+          <source columnname="EPC" columnordinal="0" />
+          <destination columnname="EPC" columnordinal="1" destfieldaction="0" />
+        </mapping>
+        <mapping index="1">
+          <source columnname="DateTime" columnordinal="5" />
+          <destination columnname="Fecha" columnordinal="5" destfieldaction="0" />
+        </mapping>
+        <mapping index="2">
+          <source columnname="ReaderName" columnordinal="6" />
+          <destination columnname="Lector" columnordinal="4" destfieldaction="0" />
+        </mapping>
+        <mapping index="3">
+          <source columnname="Pedido" columnordinal="10" />
+          <destination columnname="Pedido" columnordinal="3" destfieldaction="0" />
+        </mapping>
+        <mapping index="4">
+          <source columnname="Movimiento" columnordinal="11" />
+          <destination columnname="Puerta" columnordinal="6" destfieldaction="0" />
+        </mapping>
+      </fieldmappings>
+      <filterfields filtertype="AND" />
+      <updatefields appendifnotfound="True">
+        <updatefield columnname="EPC" />
+      </updatefields>
+      <filterfields_dest filtertype="AND">
+        <filterfield columnname="Puerta" f_idx="6" compareoperator="Equal" filtervalue="" valuetype="General" staticdynamic="Static" />
+      </filterfields_dest>
+    </process>
+  </processes>
+</profile>
