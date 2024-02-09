@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<environment width="1050" height="700" animation_speed="4" animation_type="1">
+<environment width="945" height="620" animation_speed="4" animation_type="1">
   <floorplan>
     <sqfoot x="0" y="0" type="Wall" />
     <sqfoot x="0" y="1" type="Wall" />
@@ -10022,7 +10022,7 @@
     </reader>
   </readers>
   <tagcontainers>
-    <tagcontainer top="63" left="77" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
+    <tagcontainer top="34" left="87" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
       <tags>
         <tag>
           <epc>e17fab0a-7082-464e-b2fc-bab16600b09e</epc>
@@ -10031,7 +10031,7 @@
         </tag>
       </tags>
     </tagcontainer>
-    <tagcontainer top="355" left="96" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
+    <tagcontainer top="401" left="99" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
       <tags>
         <tag>
           <epc>c568f756-d4a2-416f-82e9-4f664a721a5b</epc>
@@ -10040,7 +10040,7 @@
         </tag>
       </tags>
     </tagcontainer>
-    <tagcontainer top="14" left="72" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
+    <tagcontainer top="337" left="439" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
       <tags>
         <tag>
           <epc>b9381732-8618-49b4-9ac7-27ade2074c00</epc>
@@ -10049,7 +10049,7 @@
         </tag>
       </tags>
     </tagcontainer>
-    <tagcontainer top="398" left="160" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
+    <tagcontainer top="372" left="386" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
       <tags>
         <tag>
           <epc>0bffe2fb-1075-45b7-872a-b9935233cc70</epc>
@@ -10059,6 +10059,9 @@
       </tags>
     </tagcontainer>
   </tagcontainers>
-  <labels />
+  <labels>
+    <label top="334" left="173" width="83" height="24" text="Puerta 2" />
+    <label top="334" left="454" width="83" height="24" text="Puerta 3" />
+  </labels>
   <animation />
 </environment>

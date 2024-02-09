@@ -3,19 +3,29 @@
   <reader_emulated name="ClearStream Device 1" enabled="True" host="PTS_EMULATED-64-DE-02" port="5084" comment="" lastloginmessage="Started." readerid="1" uuid="8e46a118-8dc3-4ef1-bb82-3dc27cc8d85a">
     <options readtype="0" interval="60" duration="15" port="1" gpitimeout="0" gpidebouncetime="0" addtogpitimeout="True" timedtype="Interval" minpower="14" maxpower="30" maxprefilters="4" starttime="9/02/2024 8:30:23 a. m." stoptime="9/02/2024 8:30:23 a. m." scanday_sun="False" scanday_mon="False" scanday_tue="False" scanday_wed="False" scanday_thu="False" scanday_fri="False" scanday_sat="False" sendwhenread="False" datetimeformat="">
       <antennas>
-        <antenna id="1" name="S1" power="30" tagsession="S0" dwelltime="-1" />
-        <antenna id="2" name="E1" power="30" tagsession="S0" dwelltime="-1" />
+        <antenna id="1" name="S2" power="30" tagsession="S0" dwelltime="-1" />
+        <antenna id="2" name="E2" power="30" tagsession="S0" dwelltime="-1" />
+        <antenna id="3" name="S3" power="30" tagsession="S0" dwelltime="-1" />
+        <antenna id="4" name="E3" power="30" tagsession="S0" dwelltime="-1" />
       </antennas>
       <customfields>
         <field>
           <name>Pedido</name>
           <values>
             <value name="Pedido">
-              <staticvalue>[*CUSTOMPROP*]</staticvalue>
+              <staticvalue>[*CUSTOMPROP2*]</staticvalue>
               <function type="0" start="0" length="0" />
-              <condition type="None">
-                <sourcefield>EPC</sourcefield>
-                <value />
+              <condition type="Contains">
+                <sourcefield>Antenna</sourcefield>
+                <value>2</value>
+              </condition>
+            </value>
+            <value name="Pedido">
+              <staticvalue>[*CUSTOMPROP3*]</staticvalue>
+              <function type="0" start="0" length="0" />
+              <condition type="Contains">
+                <sourcefield>Antenna</sourcefield>
+                <value>3</value>
               </condition>
             </value>
           </values>
@@ -23,20 +33,36 @@
         <field>
           <name>Movimiento</name>
           <values>
-            <value name="Check out">
-              <staticvalue>Saliendo</staticvalue>
+            <value name="Check out 2">
+              <staticvalue>Saliendo2</staticvalue>
               <function type="0" start="0" length="0" />
               <condition type="Contains">
                 <sourcefield>Antenna</sourcefield>
-                <value>S1</value>
+                <value>S2</value>
               </condition>
             </value>
-            <value name="Check in">
-              <staticvalue>Entrando</staticvalue>
+            <value name="Check in 2">
+              <staticvalue>Entrando2</staticvalue>
               <function type="0" start="0" length="0" />
               <condition type="Contains">
                 <sourcefield>Antenna</sourcefield>
-                <value>E1</value>
+                <value>E2</value>
+              </condition>
+            </value>
+            <value name="Check out 3">
+              <staticvalue>Saliendo3</staticvalue>
+              <function type="0" start="0" length="0" />
+              <condition type="Contains">
+                <sourcefield>Antenna</sourcefield>
+                <value>S3</value>
+              </condition>
+            </value>
+            <value name="Check in 3">
+              <staticvalue>Entrando3</staticvalue>
+              <function type="0" start="0" length="0" />
+              <condition type="Contains">
+                <sourcefield>Antenna</sourcefield>
+                <value>E3</value>
               </condition>
             </value>
           </values>

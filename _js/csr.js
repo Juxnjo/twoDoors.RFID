@@ -19,7 +19,6 @@ var sParam_ReaderId = url.searchParams.get("id");
 
 function processReaderBuffer(pReaderBuffer) {
 
-    
     var sReaderDomId = pReaderBuffer.deviceid.replace(/:/g, "");
 
     var tb1 = document.getElementById(sReaderDomId);
@@ -33,6 +32,7 @@ function processReaderBuffer(pReaderBuffer) {
         tbl = $("<div class='buffertable' />").attr("id", sReaderDomId);
 
         $("#buffer").append(pWrapper);
+
         pWrapper.append(tbl);
 
         pDivRowHeader = $("<div class=\"dataheader\" />").attr("id", sReaderDomId + 'header');
@@ -62,7 +62,6 @@ function processReaderBuffer(pReaderBuffer) {
                                     <div class="readerstatscell">${pReaderBuffer.started ? 'Encendido' : 'Apagado'}</div>
                                     <div class="semaforo" style="background-color: ${pReaderBuffer.started ? 'green' : 'red'};"></div>
                                 </div>
-                                <div class="readercountcell" id="countdiv"># Etiquetas: <strong>${nTagCount}</strong></div>
                             </div>`;
 
     // First flag as invalid.
@@ -300,7 +299,6 @@ function cleargrid() {
         }
     }
 
-    document.getElementById('countdiv').innerHTML = '# Etiquetas: <strong>0</strong>';
 
     if (bRestartTimer == true)
         startBufferTimer();

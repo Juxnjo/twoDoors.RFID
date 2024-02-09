@@ -63,7 +63,7 @@ div.buffertable {
   overflow-y: scroll;
   border: 0px solid black;
   background-color: #8DA6DB;
-  width: 100%;
+  width: 50%;
   margin: 0px;
   height: 150px;
   max-height: 150px;

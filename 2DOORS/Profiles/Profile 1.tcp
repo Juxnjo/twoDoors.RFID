@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <profile name="Profile 1" defaultsyncprofile="False" realtimeprofile="False" livemode_v9x1="True" profile_id="1">
   <processes>
-    <process name="Process 1" enabled="True" lastsyncstatus="9/02/2024 10:42:43 a. m.:  Sync completed.">
+    <process name="Process 1" enabled="True" lastsyncstatus="9/02/2024 11:22:14 a. m.:  Sync completed.">
       <comment />
       <options updatetype="UpdateExistingAppendIfNotFound" overwritewithzerorecords="False" deleteaftertransfer="False" />
       <datasets>
@@ -25,24 +25,20 @@
       </datasets>
       <fieldmappings>
         <mapping index="0">
-          <source columnname="EPC" columnordinal="0" />
+          <source columnname="EPC" columnordinal="-1" />
           <destination columnname="EPC" columnordinal="1" destfieldaction="0" />
         </mapping>
         <mapping index="1">
-          <source columnname="DateTime" columnordinal="5" />
+          <source columnname="DateTime" columnordinal="-1" />
           <destination columnname="Fecha" columnordinal="5" destfieldaction="0" />
         </mapping>
-        <mapping index="2">
-          <source columnname="ReaderName" columnordinal="6" />
-          <destination columnname="Lector" columnordinal="4" destfieldaction="0" />
+        <mapping index="3">
+          <source columnname="Movimiento" columnordinal="11" />
+          <destination columnname="Puerta" columnordinal="6" destfieldaction="0" />
         </mapping>
         <mapping index="3">
           <source columnname="Pedido" columnordinal="10" />
           <destination columnname="Pedido" columnordinal="3" destfieldaction="0" />
-        </mapping>
-        <mapping index="4">
-          <source columnname="Movimiento" columnordinal="11" />
-          <destination columnname="Puerta" columnordinal="6" destfieldaction="0" />
         </mapping>
       </fieldmappings>
       <filterfields filtertype="AND" />
