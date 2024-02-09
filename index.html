@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./_js/csr.js"></script>
+    <link rel="stylesheet" href="./_css/csr.css" />
+    <link rel="shortcut icon" href="./img/icon.png" />
+    <title>Control RFID</title>
+  </head>
+
+  <body onLoad="initForm();">
+    <div class="header">
+      <div class="csr_header_logo">
+        <div class="logo-container">
+          <img src="./img/socodaLogo.png" />
+        </div>
+        <div class="logo-container">
+          <img src="./img/Logo color_adn_1.png" />
+        </div>
+      </div>
+
+      <h1 class="csr_header">Control RFID</h1>
+    </div>
+
+    <div class="toolbar">
+      <div style="display: inline-block">
+        <!-- Host/Port: -->
+        <input type="text" id="txtHost" value="http://localhost:4405" hidden />
+      </div>
+      <div style="display: inline-block; white-space: nowrap">
+        Lector:
+        <div class="reader_dropdown">
+          <select id="cmbReaderID"></select>
+          <a class="refreshbutton" onClick="refreshReaderList();"
+            ><img src="./img/refresh.png"
+          /></a>
+        </div>
+      </div>
+
+      <div style="display: inline-block">
+        <div style="display: inline-block">
+          <input
+            id="btnEncender"
+            class="toolbarbutton critical"
+            type="button"
+            value="Encender"
+            onclick="startReader();startBufferTimer();"
+          />
+        </div>
+        <form style="display: inline-block">
+          <input
+            type="text"
+            placeholder="# Pedido"
+            id="txtSalesOrder"
+            required
+          />
+          <button
+            class="toolbarbutton"
+            type="button"
+            value="Actualizar"
+            onclick="actualizar();"
+          >
+            Actualizar
+          </button>
+        </form>
+        <div style="display: inline-block">
+          <input
+            id="btnApagar"
+            class="toolbarbutton critical"
+            type="button"
+            value="Apagar"
+            onclick="stopReader();stopBufferTimer();"
+          />
+        </div>
+        <div style="display: inline-block">
+          <input
+            id="btnLimpiar"
+            class="toolbarbutton"
+            type="button"
+            value="Limpiar Etiquetas"
+            onclick="cleargrid();"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="buffer" class="tagbuffersblock"></div>
+
+    <div id="readerstatus" style="display: none"></div>
+    <div id="result" class="result"></div>
+    <div class="footertext">
+      <p>&copy; Copyright Portable Technology Solutions</p>
+    </div>
+  </body>
+</html>
