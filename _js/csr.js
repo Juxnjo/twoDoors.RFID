@@ -24,10 +24,9 @@ function processReaderBuffer(pReaderBuffer) {
     var tb1 = document.getElementById(sReaderDomId);
     if (tb1 == null) {
 
-        var pReaderInfo = $("<div class='readerstats'/>").attr("id", 'stats' + sReaderDomId);
-
         var pWrapper = $("<div class='bufferwrapper'/>");
-        
+
+        var pReaderInfo = $("<div class='readerstats'/>").attr("id", 'stats' + sReaderDomId);
         pWrapper.append(pReaderInfo);
 
         tbl = $("<div class='buffertable' />").attr("id", sReaderDomId);
@@ -48,6 +47,10 @@ function processReaderBuffer(pReaderBuffer) {
         // Add the body, to which the rows will be appended.
         pDivTableBody = $("<div class=\"databody\" />").attr("id", sReaderDomId + 'body');
         $('#' + sReaderDomId).append(pDivTableBody);
+
+        
+
+        
     }
 
     var nTagCount = 0;
