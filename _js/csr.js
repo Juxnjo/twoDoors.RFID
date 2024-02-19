@@ -24,9 +24,10 @@ function processReaderBuffer(pReaderBuffer) {
     var tb1 = document.getElementById(sReaderDomId);
     if (tb1 == null) {
 
-        var pWrapper = $("<div class='bufferwrapper'/>");
-
         var pReaderInfo = $("<div class='readerstats'/>").attr("id", 'stats' + sReaderDomId);
+
+        var pWrapper = $("<div class='bufferwrapper'/>");
+        
         pWrapper.append(pReaderInfo);
 
         tbl = $("<div class='buffertable' />").attr("id", sReaderDomId);
