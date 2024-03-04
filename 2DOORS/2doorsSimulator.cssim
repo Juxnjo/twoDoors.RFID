@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<environment width="945" height="620" animation_speed="4" animation_type="1">
+<environment width="945" height="720" animation_speed="4" animation_type="1">
   <floorplan>
     <sqfoot x="0" y="0" type="Wall" />
     <sqfoot x="0" y="1" type="Wall" />
@@ -10018,41 +10018,43 @@
           <bullseye top="179" left="504" width="16" height="16" />
         </antenna>
       </antennas>
-      <gpodevices />
+      <gpodevices>
+        <gpodevice top="177" left="299" width="21" height="40" type="LightStack_OneLight" />
+      </gpodevices>
     </reader>
   </readers>
   <tagcontainers>
-    <tagcontainer top="34" left="87" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
+    <tagcontainer top="382" left="66" width="48" height="48" type="Folder" tagtype="Label" material="Paper">
       <tags>
         <tag>
-          <epc>e17fab0a-7082-464e-b2fc-bab16600b09e</epc>
+          <epc>50751f34-adb9-44a2-b1e6-89f41bbf89bf</epc>
           <tid />
           <user />
         </tag>
       </tags>
     </tagcontainer>
-    <tagcontainer top="401" left="99" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
+    <tagcontainer top="411" left="386" width="48" height="48" type="ITAsset" tagtype="Label" material="Plastic">
       <tags>
         <tag>
-          <epc>c568f756-d4a2-416f-82e9-4f664a721a5b</epc>
+          <epc>123</epc>
           <tid />
           <user />
         </tag>
       </tags>
     </tagcontainer>
-    <tagcontainer top="337" left="439" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
+    <tagcontainer top="365" left="140" width="48" height="48" type="Pallet" tagtype="Label" material="Wood">
       <tags>
         <tag>
-          <epc>b9381732-8618-49b4-9ac7-27ade2074c00</epc>
+          <epc>6c9d4cfa-5036-4c3f-86fb-e09a079bbe51</epc>
           <tid />
           <user />
         </tag>
       </tags>
     </tagcontainer>
-    <tagcontainer top="372" left="386" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
+    <tagcontainer top="64" left="438" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
       <tags>
         <tag>
-          <epc>0bffe2fb-1075-45b7-872a-b9935233cc70</epc>
+          <epc>456</epc>
           <tid />
           <user />
         </tag>

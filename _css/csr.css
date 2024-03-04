@@ -21,15 +21,16 @@ div.tagbuffersblock {
   background-color: #e6e6e6;
   border: 1px solid black;
   height: 50vh;
-  width: 50%;
+  width: 100%;
+  /* width: 50%; */
 }
 
-div.tagbuffersblock2 {
+/* div.tagbuffersblock2 {
   background-color: #e6e6e6;
   border: 1px solid black;
   height: 50vh;
   width: 50%;
-}
+} */
 div.dataheader {
   display: table-header-group;
   white-space: nowrap;
@@ -101,7 +102,7 @@ div.toolbar {
   margin: 0px;
   background-color: #8DA6DB;
   color: white;
-  padding: 5px;
+  padding-top: 15px;
   text-align: center;
 }
 div.result {
@@ -155,6 +156,7 @@ optgroup {
 div.reader_dropdown select {
   font-size: 12pt;
   padding: 1.5px;
+  margin-bottom: 10px;
 }
 
 a.refreshbutton:hover {
@@ -221,4 +223,14 @@ a.refreshbutton:hover {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+}
+
+.form-header{
+  display: grid; 
+  justify-content: center;
+
+}
+
+#txtSalesOrder{
+  margin-bottom: 5px;
 }
