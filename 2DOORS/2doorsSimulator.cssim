@@ -10024,7 +10024,7 @@
     </reader>
   </readers>
   <tagcontainers>
-    <tagcontainer top="382" left="66" width="48" height="48" type="Folder" tagtype="Label" material="Paper">
+    <tagcontainer top="74" left="98" width="48" height="48" type="Folder" tagtype="Label" material="Paper">
       <tags>
         <tag>
           <epc>50751f34-adb9-44a2-b1e6-89f41bbf89bf</epc>
@@ -10033,7 +10033,7 @@
         </tag>
       </tags>
     </tagcontainer>
-    <tagcontainer top="411" left="386" width="48" height="48" type="ITAsset" tagtype="Label" material="Plastic">
+    <tagcontainer top="42" left="402" width="48" height="48" type="ITAsset" tagtype="Label" material="Plastic">
       <tags>
         <tag>
           <epc>123</epc>
@@ -10042,7 +10042,7 @@
         </tag>
       </tags>
     </tagcontainer>
-    <tagcontainer top="365" left="140" width="48" height="48" type="Pallet" tagtype="Label" material="Wood">
+    <tagcontainer top="15" left="140" width="48" height="48" type="Pallet" tagtype="Label" material="Wood">
       <tags>
         <tag>
           <epc>6c9d4cfa-5036-4c3f-86fb-e09a079bbe51</epc>
@@ -10051,7 +10051,7 @@
         </tag>
       </tags>
     </tagcontainer>
-    <tagcontainer top="64" left="438" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
+    <tagcontainer top="36" left="441" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
       <tags>
         <tag>
           <epc>456</epc>

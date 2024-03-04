@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <profile name="Profile 1" defaultsyncprofile="False" realtimeprofile="False" livemode_v9x1="True" profile_id="1">
   <processes>
-    <process name="Process 1" enabled="True" lastsyncstatus="3/4/2024 2:05:11 PM:  Sync completed.">
+    <process name="Process 1" enabled="True" lastsyncstatus="3/4/2024 3:56:17 PM:  Sync completed.">
       <comment />
       <options updatetype="UpdateExistingAppendIfNotFound" overwritewithzerorecords="False" deleteaftertransfer="False" />
       <datasets>
@@ -49,7 +49,7 @@
         <filterfield columnname="Puerta" f_idx="5" compareoperator="Equal" filtervalue="" valuetype="General" staticdynamic="Static" />
       </filterfields_dest>
     </process>
-    <process name="Process 2" enabled="True" lastsyncstatus="3/4/2024 2:05:11 PM:  Sync completed.">
+    <process name="Process 2" enabled="True" lastsyncstatus="3/4/2024 3:56:17 PM:  Sync completed.">
       <comment />
       <options updatetype="UpdateExisting" overwritewithzerorecords="False" deleteaftertransfer="False" />
       <datasets>

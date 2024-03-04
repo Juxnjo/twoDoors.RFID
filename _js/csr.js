@@ -534,6 +534,9 @@ function actualizar ()
         
         alert("Ingrese el numero de pedido 2.");
         return;
+    } else if (customPropValue === customPropValue2){
+        alert("El numero de pedido no puede ser igual")
+        return
     }
     
     
