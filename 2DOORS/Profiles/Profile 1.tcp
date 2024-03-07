@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <profile name="Profile 1" defaultsyncprofile="False" realtimeprofile="False" livemode_v9x1="True" profile_id="1">
   <processes>
-    <process name="Process 1" enabled="True" lastsyncstatus="3/4/2024 4:01:37 PM:  Sync completed.">
+    <process name="Process 1" enabled="True" lastsyncstatus="6/03/2024 8:22:55 a. m.:  Sync completed.">
       <comment />
       <options updatetype="UpdateExistingAppendIfNotFound" overwritewithzerorecords="False" deleteaftertransfer="False" />
       <datasets>
@@ -9,7 +9,7 @@
           <datasource type="RFID" devicetype="LLRP" name="" ip="" port="5084">
             <options />
           </datasource>
-          <options readtype="0" interval="60" duration="15" port="1" gpitimeout="0" timedtype="Interval" starttime="2/19/2024 10:45:37 AM" stoptime="2/19/2024 10:45:37 AM" scanday_sun="False" scanday_mon="False" scanday_tue="False" scanday_wed="False" scanday_thu="False" scanday_fri="False" scanday_sat="False">
+          <options readtype="0" interval="60" duration="15" port="1" gpitimeout="0" timedtype="Interval" starttime="19/02/2024 10:45:37 a. m." stoptime="19/02/2024 10:45:37 a. m." scanday_sun="False" scanday_mon="False" scanday_tue="False" scanday_wed="False" scanday_thu="False" scanday_fri="False" scanday_sat="False">
             <readermgmt epctaglength="12" userbanklength="64" maxtagcount="4096" />
             <tagreporting />
           </options>
@@ -30,15 +30,15 @@
         </mapping>
         <mapping index="1">
           <source columnname="DateTime" columnordinal="5" />
-          <destination columnname="Fecha" columnordinal="4" destfieldaction="0" />
+          <destination columnname="Fecha" columnordinal="5" destfieldaction="0" />
         </mapping>
         <mapping index="2">
           <source columnname="Movimiento" columnordinal="11" />
-          <destination columnname="Puerta" columnordinal="5" destfieldaction="0" />
+          <destination columnname="Puerta" columnordinal="6" destfieldaction="0" />
         </mapping>
         <mapping index="3">
           <source columnname="Pedido" columnordinal="10" />
-          <destination columnname="Pedido" columnordinal="2" destfieldaction="0" />
+          <destination columnname="Pedido" columnordinal="3" destfieldaction="0" />
         </mapping>
       </fieldmappings>
       <filterfields filtertype="AND" />
@@ -46,10 +46,10 @@
         <updatefield columnname="EPC" />
       </updatefields>
       <filterfields_dest filtertype="AND">
-        <filterfield columnname="Puerta" f_idx="5" compareoperator="Equal" filtervalue="" valuetype="General" staticdynamic="Static" />
+        <filterfield columnname="Puerta" f_idx="6" compareoperator="Equal" filtervalue="" valuetype="General" staticdynamic="Static" />
       </filterfields_dest>
     </process>
-    <process name="Process 2" enabled="True" lastsyncstatus="3/4/2024 4:01:37 PM:  Sync completed.">
+    <process name="Process 2" enabled="True" lastsyncstatus="6/03/2024 8:22:55 a. m.:  Sync completed.">
       <comment />
       <options updatetype="UpdateExisting" overwritewithzerorecords="False" deleteaftertransfer="False" />
       <datasets>
@@ -57,7 +57,7 @@
           <datasource type="RFID" devicetype="LLRP" name="" ip="" port="5084">
             <options />
           </datasource>
-          <options readtype="0" interval="60" duration="15" port="1" gpitimeout="0" timedtype="Interval" starttime="3/4/2024 1:37:35 PM" stoptime="3/4/2024 1:37:35 PM" scanday_sun="False" scanday_mon="False" scanday_tue="False" scanday_wed="False" scanday_thu="False" scanday_fri="False" scanday_sat="False">
+          <options readtype="0" interval="60" duration="15" port="1" gpitimeout="0" timedtype="Interval" starttime="4/03/2024 1:37:35 p. m." stoptime="4/03/2024 1:37:35 p. m." scanday_sun="False" scanday_mon="False" scanday_tue="False" scanday_wed="False" scanday_thu="False" scanday_fri="False" scanday_sat="False">
             <readermgmt epctaglength="12" userbanklength="64" maxtagcount="4096" />
             <tagreporting />
           </options>

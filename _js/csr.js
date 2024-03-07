@@ -23,37 +23,52 @@ function processReaderBuffer ( pReaderBuffer )
     var sReaderDomId = pReaderBuffer.deviceid.replace( /:/g, "" );
 
     var tb1 = document.getElementById( sReaderDomId );
+    
     if ( tb1 == null )
     {
 
         var pWrapper = $( "<div class='bufferwrapper'/>" );
 
         var pReaderInfo = $( "<div class='readerstats'/>" ).attr( "id", 'stats' + sReaderDomId );
+    
         pWrapper.append( pReaderInfo );
 
         tbl = $( "<div class='buffertable' />" ).attr( "id", sReaderDomId );
-
-        $( "#buffer" ).append( pWrapper );
+        
+       /*  $( "#buffer" ).append( pWrapper);
+        $( "#buffer2" ).append( pWrapper); */
 
         pWrapper.append( tbl );
+    
 
         pDivRowHeader = $( "<div class=\"dataheader\" />" ).attr( "id", sReaderDomId + 'header' );
-
-        $( '#' + sReaderDomId ).append( pDivRowHeader );
+    
+        
+        //$( '#' + sReaderDomId ).append( pDivRowHeader );
+        pWrapper.append(pDivRowHeader);
+    
+    
         initHeaderRow( pDivRowHeader );
-
+    
+        
         var pvalidRow = $( "#" + sReaderDomId + 'header' );
 
         pvalidRow.data( 'valid', true );
 
         // Add the body, to which the rows will be appended.
         pDivTableBody = $( "<div class=\"databody\" />" ).attr( "id", sReaderDomId + 'body' );
-        $( '#' + sReaderDomId ).append( pDivTableBody );
-
+    
+        //$( '#' + sReaderDomId ).append( pDivTableBody );
+        pWrapper.append(pDivTableBody);
+    
+        $("#buffer").append(pWrapper.clone());
+        $("#buffer2").append(pWrapper);
 
 
 
     }
+
+    
 
     var nTagCount = 0;
     if ( pReaderBuffer.buffer )

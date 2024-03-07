@@ -21,16 +21,16 @@ div.tagbuffersblock {
   background-color: #e6e6e6;
   border: 1px solid black;
   height: 50vh;
-  width: 100%;
+  width: 50%;
   /* width: 50%; */
 }
 
-/* div.tagbuffersblock2 {
+div.tagbuffersblock2 {
   background-color: #e6e6e6;
   border: 1px solid black;
   height: 50vh;
   width: 50%;
-} */
+}
 div.dataheader {
   display: table-header-group;
   white-space: nowrap;
@@ -52,6 +52,7 @@ div.datarow:hover {
 }
 div.datacell {
   display: table-cell;
+  width: 100vw;
   padding: 3px 3px 3px 10px;
   white-space: nowrap;
   overflow: hidden;
